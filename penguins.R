@@ -1,6 +1,6 @@
 data <- read.csv("penguins.csv")
 x <- data$bill_length_mm
 
-png("penguins-boxplot.png")
-boxplot(x)
+png("penguins-hist.png")
+hist(x, breaks = seq(40, 60, 2))
 dev.off()
